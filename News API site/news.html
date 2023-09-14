@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    
+    <div id="main">
+        <div id="nav">
+            <h2>The Day</h2>
+            <ul id="sections">
+                <li class="hover-tab" id="ipl" onclick="itemclick('Science')">Science</li>
+                <li class="hover-tab" id="finance" onclick="itemclick('finance')" >Finance</li>                
+                <li class="hover-tab" id="politics" onclick="itemclick('politics')">Politics</li>
+                <li class="hover-tab" id="sports" onclick="itemclick('sports')">Sports</li>
+            </ul>
+            <div>
+                <input type="search" id="searchtext" size="15px">
+                <button id="searchbutton">Search</button>
+            </div>
+        </div>
+        <div id="newsbox">
+            <!-- <div id="card">
+                <div id="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="" id="newsimg">
+                </div>
+                <div id="card-content">
+                    <h2 id="news-title">this is the title</h2>
+                    <h4 id="news-source">the magazine 13/09/2023</h4>
+                    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta adipisci voluptas ea ab eaque harum minus, sapiente autem magni. Aliquid.</p>
+                </div>
+            </div> -->
+           
+        </div>
+        
+    </div>
+
+    <template id="news-template">
+        <div id="card">
+            <div id="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="newsimg">
+            </div>
+            <div id="card-content">
+                <h2 id="news-title">this is the title</h2>
+                <h4 id="news-source">the magazine 13/09/2023</h4>
+                <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta adipisci voluptas ea ab eaque harum minus, sapiente autem magni. Aliquid.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="./news.js"></script>
+</body>
+</html>
